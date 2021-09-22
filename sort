@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+action=${1}
+shift
+
+[ "${action}" = "usage" ] && {
+  echo "    Sorts the current todo file."
+  exit
+}
+
+[ "${action}" = "sort" ] && {
+    sort "${TODO_FILE}" --output "${TODO_FILE}"
+}
