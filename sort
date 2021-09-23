@@ -4,7 +4,8 @@ action=${1}
 shift
 
 [ "${action}" = "usage" ] && {
-  echo "    Sorts the current todo file."
+  echo "    sort"
+  echo "      Sorts the current todo file."
   exit
 }
 
